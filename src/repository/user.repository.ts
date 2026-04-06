@@ -41,7 +41,7 @@ export const userRepository = {
         );
 
         if(!result.insertId){
-            throw new Error()
+            return
         }
 
         return result.insertId;
